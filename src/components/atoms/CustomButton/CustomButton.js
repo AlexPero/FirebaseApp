@@ -4,7 +4,7 @@ import {Pressable, Text, StyleSheet} from "react-native";
 const CustomButton = ({onPress, text, color, textColor, style}) => {
     return (
         <Pressable onPress={onPress} style={[AppStyle.container, style, {backgroundColor: color}]}>
-            <Text style={[AppStyle.text, {fontFamily: "Trenda-bold", color: textColor ? textColor : "white"}]}>{text}</Text>
+            <Text style={[AppStyle.text, {color: textColor ? textColor : "white"}]}>{text}</Text>
         </Pressable>
     );
 }
